@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HAIDM2021 - Registration</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">HAIDM2021</a>
+    </header>
+    <section class="banner" id="banner">
+        <div class="mask">
+            <div class="content">
+                <h2>HUMAN-CENTERED DATA, MODELING, AND AI</h2>
+            </div>
+        </div>
+    </section>    
+
+    <section class="workshop">
+        <div class="keyword">
+            <ul >
+                <li><a href="index.html"><p>The Workshop</p></a></></li>
+                <li><a href="keynotes-abstract.html"><p>Keynotes Abstract</p></a></></li>
+                <li><a href="committees.html"><p>Committees</p></a></></li>
+                <li><a href="provisional-programme.html"><p>Provisional Programme</p></a></></li>
+                <li><a href="call-for-papers.html"><p>Call for Papers</p></a></></li>
+                <li><a href="registration.html"><p>Registration</p></a></></li>
+            </ul>
+        </div>
+    </section>
+    <section class="article">
+        <div class="text">
+            <h2>Committees</h2>
+            <h3>Progarmme Chairs:</h3>
+            <p>
+                <ul>
+                    <li>Professor Dame Wendy Hall (University of Southampton, wh@ecs.soton.ac.uk)</li>
+                    <li>Professor Tuo Leng (Shanghai University, tleng@shu.edu.cn)</li>
+                    <li>Professor Xiaodong Yue (Shanghai University, yswantfly@shu.edu.cn)</li>
+                    <li>Professor Yinmin Wang (Shanghai University, y_wang@shu.edu.cn)</li>
+                    <li>Professor Yin Li (Shanghai University, yinglotus@t.shu.edu.cn) </li>
+                </ul>
+            </p>
+            <h3>Organizing Committee:</h3>
+            <p>
+                <ul>
+                    <li>Tuo Leng (Shanghai University)</li>
+                    <li>Runan Wang  (Shanghai University)</li>
+                    <li>Yifan Wang  (Shanghai University)</li>
+                    <li>Yiwen Huang  (Shanghai University)</li>
+                </ul>
+            </p>
+    </section>
+    <script>
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY>0);
+        });
+    </script>
+</body>
+</html>
+
+

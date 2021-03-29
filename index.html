@@ -1,42 +1,63 @@
----
-layout: page
-description: "Thinking will not overcome fear but action will."
----
-
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HAIDM2021 - Registration</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">HAIDM2021</a>
+    </header>
+    <section class="banner" id="banner">
+        <div class="mask">
+            <div class="content">
+                <h2>HUMAN-CENTERED DATA, MODELING, AND AI</h2>
+            </div>
         </div>
-    </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-</div>
-<hr>
-{% endfor %}
+    </section>    
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+    <section class="workshop">
+        <div class="keyword">
+            <ul >
+                <li><a href="index.html"><p>The Workshop</p></a></></li>
+                <li><a href="keynotes-abstract.html"><p>Keynotes Abstract</p></a></></li>
+                <li><a href="committees.html"><p>Committees</p></a></></li>
+                <li><a href="provisional-programme.html"><p>Provisional Programme</p></a></></li>
+                <li><a href="call-for-papers.html"><p>Call for Papers</p></a></></li>
+                <li><a href="registration.html"><p>Registration</p></a></></li>
+            </ul>
+        </div>
+    </section>
+    <section class="article">
+        <div class="text">
+            <h2>The Workshop</h2>
+            <p> 
+                We have reached a truly historic turning point, human society is being reshaped faster and more profoundly by technology. Started from the birth of the World Wide Web, driven by the rapidly growing data and computing power, the most disruptive changes can be traced back to the recent development of Artificial Intelligence (AI). Like any powerful tool, AI promises the same level of risk and reward. 
+            </p>
+            <p>
+                In the past 10 years, the development and use of AI is a decentralized global phenomenon with relatively low barriers to entry. We have seen that AI-generated content makes it more and more difficult to tell facts from the fiction; recent examples of machine learning deviations showed how our technology can easily magnify prejudice and inequality. Therefore, the frontier of AI cannot be just technology, it must also be humanistic.
+            </p>
+            <p>
+                Then how do we improve or adjust our web system to alleviate the existing issue, to help AI becoming more humanistic? Like, how do we preserving privacy when we design a new social network? How do we obtain unbiased sampling in temporal and spatial dimensions, or semantic dimensions? How do we establish anti-bias learning models to avoid Ecological Fallacy? Particularly, when social media are not only offering almost infinite data to related subjects but also influence both online and offline user behavior in a various way, itself should play a vital role on every aspect of human-centered data, modeling, and AI. 
+            </p>
+            <h3>Key Dates:</h3>
+            <p>
+                <ul>
+                    <li>workshop At WebSci21: 22th June 2021 10:00 - 17:00 </li>
+                </ul>
+            </p>
+            <h3>Requirements:</h3>
+                <p>The workshop will be delivered online, hence there are no special requirements for participants.</p>
+        </div>
+            
+    </section>
+    <script>
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY>0);
+        });
+    </script>
+</body>
+</html>
