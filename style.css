@@ -123,26 +123,29 @@ body{
 .banner{
     position: relative;
     width: 100%;
-    min-height: 35vh;
+    min-height: 47vh;
     background: url(./bg.jpg);
     background-size: cover;
 }
 .banner .mask{
     position: relative;
     width: 100%;
-    min-height: 35vh;
+    min-height: 47vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.5);
 }
 .banner .content{
-    width: 70%;
-    border-bottom: solid 10px #444;
+    display: flex;
+    justify-items: center;
+    line-height: 120px;
+    width: 80%;
+    border-bottom: solid 15px #444;
 }
 .banner .content h2{
     font-family: Oswald;
-    font-size: 30.0pt;
+    font-size: 60px;
     padding: 10px 0;
     color: #fff;
 }
@@ -162,7 +165,7 @@ header{
 header .logo{
     color: #fff;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 30px;
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
@@ -179,7 +182,7 @@ header.sticky .logo{
 .workshop{
     position: relative;
     width: 100%;
-    min-height: 15vh;
+    min-height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,9 +207,17 @@ header.sticky .logo{
 }
 .workshop .keyword{
     position: relative;
-    width: 70%;
-    display: flex;
-    border-bottom: solid 4px #999;
+    width: 76%;
+    display: table-cell;
+    border-bottom: solid 5px #666;
+}
+.workshop .keyword ul { 
+    float: left;
+    text-align: center;
+}
+.workshop .keyword ul li{ 
+    margin: 20px;
+    width: 300px;
 }
 .article{
     min-height: 70vh;
@@ -216,7 +227,8 @@ header.sticky .logo{
 }
 .article .text{
     position: relative;
-    width: 60%;
+    font-size: 1.3em;
+    width: 80%;
     display: block;
     margin-bottom: 80px;
 }
@@ -224,6 +236,8 @@ header.sticky .logo{
     margin-top: 50px;
 }
 .article .text p{
+    line-height: 1.4em;
+    color: #555;
     margin-top: 40px;
 
 }
@@ -238,4 +252,20 @@ header.sticky .logo{
 }
 .article .text .pr{
     list-style: none;
+}
+.pic{ 
+        float: right;
+
+}
+.text div[title]{ 
+    width:50%;
+    float: left;
+}
+div.key1{ 
+    width: 35%;
+    float: left;
+}
+div.key2{ 
+    float: left;
+    width: 30%;
 }

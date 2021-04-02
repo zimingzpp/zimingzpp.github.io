@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>HAIDM2021 - Registration</title>
 </head>
+
 <body>
     <header>
         <a href="#" class="logo">HAIDM2021</a>
@@ -16,39 +18,67 @@
                 <h2>HUMAN-CENTERED DATA, MODELING, AND AI</h2>
             </div>
         </div>
-    </section>    
+    </section>
 
     <section class="workshop">
         <div class="keyword">
-            <ul >
-                <li><a href="index.html"><p>The Workshop</p></a></></li>
-                <li><a href="keynotes-abstract.html"><p>Keynotes Abstract</p></a></></li>
-                <li><a href="committees.html"><p>Committees</p></a></></li>
-                <li><a href="provisional-programme.html"><p>Provisional Programme</p></a></></li>
-                <li><a href="call-for-papers.html"><p>Call for Papers</p></a></></li>
-                <li><a href="registration.html"><p>Registration</p></a></></li>
-            </ul>
+            <div class="key1">
+                <li><a href="index.html">
+                        <p>The Workshop</p>
+                    </a>
+                </li>
+                <li><a href="provisional-programme.html">
+                        <p>Provisional Programme</p>
+                    </a>
+                </li>
+            </div>
+            <div class="keyblan"></div>
+            <div class="key2">
+                <li><a href="keynotes-abstract.html">
+                        <p>Keynotes Abstract</p>
+                    </a>
+                </li>
+                <li><a href="call-for-papers.html">
+                        <p>Call for Papers</p>
+                    </a>
+                </li>
+            </div>
+            <div class="keyblank"></div>
+            <div class="key3">
+                <li><a href="committees.html">
+                        <p>Committees</p>
+                    </a>
+                </li>
+                <li><a href="registration.html">
+                        <p>Registration</p>
+                    </a>
+                </li>
+            </div>
         </div>
     </section>
     <section class="article">
         <div class="text">
             <h2>Keynotes Abstract</h2>
-            <p> 
-               Despite the enormous data brought by the Web, the quality of social network data is often difficult to guarantee. In addition to the representativeness of the data itself, the process of obtaining data usually runs into biased sampling in statistics, temporal-spatial dimensions, or even semantic dimensions. Thus the conclusions and decisions obtained may remain unaccountable. Recent works on Counterfactual and Casual Reasoning show a very positive result on anti-bias modeling, yet the whole interdisciplinary field is still under-explored.On the other hand, although social media data is mega in size, the data dimension is usually relatively single and is considered a kind of "thin data". For instance, we can easily obtain the user's social media content, but the age, gender, occupation, and other more detailed information is still hard to observe. This will cause modeling to easily fall into "Ecological Fallacy". Therefore the privacy preserving and related ethic discussion have been integrated into much intersectional research. For instance, the combination of Differential Privacy and Generative Adversarial Networks (GAN) in recent work is showing the ability to alleviate the issue.By this workshop, we hope some sparkles from the world-leading insightful minds that can inspire the participants' research on a new Reasonable, Interpretable, and Human-Centered AI paradigm.  
+            <p>
+                Despite the enormous data brought by the Web, the quality of social network data is often difficult to guarantee. In addition to the representativeness of the data itself, the process of obtaining data usually runs into biased sampling in statistics, temporal-spatial dimensions, or even semantic dimensions. Thus the conclusions and decisions obtained may remain unaccountable. Recent works on Counterfactual and Casual Reasoning show a very positive result on anti-bias modeling, yet the whole interdisciplinary field is still under-explored.On the other hand, although social media data is mega in size, the data dimension is usually relatively single and is considered a kind of "thin data". For instance, we can easily obtain the user's social media content, but the age, gender, occupation, and other more detailed information is still hard to observe. This will cause modeling to easily fall into "Ecological Fallacy". Therefore the privacy preserving and related ethic discussion have been integrated into much intersectional research. For instance, the combination of Differential Privacy and Generative Adversarial Networks (GAN) in recent work is showing the ability to alleviate the issue.By this workshop, we hope some sparkles from the world-leading insightful minds that can inspire the participants' research on a new Reasonable, Interpretable, and Human-Centered AI paradigm.
             </p>
             <h3>GOALS</h3>
+            <div title>
                 <p>
                     Our goal is to develop Human-Centered AI (HAI) around the core and multidisciplinary nature of Web Science. To discuss in the context of some global challenges such as COVID-19 is the key to embedding a new paradigm of AI into the after-pandemic world. More importantly, Web-based data, structures, and skills should guide AI to enhance our humanity, not to reduce or replace it.
                 </p>
-            <img src="./ab.png" alt="" srcset="">
+            </div>
+            <div class="pic">
+                <img src="./ab.png" alt="" srcset="">
+            </div>
         </div>
     </section>
     <script>
-        window.addEventListener('scroll', function(){
+        window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
-            header.classList.toggle("sticky", window.scrollY>0);
+            header.classList.toggle("sticky", window.scrollY > 0);
         });
     </script>
 </body>
-</html>
 
+</html>
