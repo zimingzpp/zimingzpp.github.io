@@ -1,158 +1,166 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    min-height: 1000px;
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/oswald/v36/TK3_WkUHHAIjg75cFRf3bXL8LICs13FvsUZiZQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+body {
+  min-height: 1000px;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 47vh;
+  background: url(./bg.jpg);
+  background-size: cover;
+}
+.banner .mask {
+  position: relative;
+  width: 100%;
+  min-height: 47vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+.banner .content {
+  display: flex;
+  justify-items: center;
+  line-height: 120px;
+  width: 80%;
+  border-bottom: solid 15px #444;
+}
+.banner .content h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 36pt;
+  padding: 10px 0;
+  color: #fff;
+}
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
 }
-.banner{
-    position: relative;
-    width: 100%;
-    min-height: 47vh;
-    background: url(./bg.jpg);
-    background-size: cover;
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Oswald;
 }
-.banner .mask{
-    position: relative;
-    width: 100%;
-    min-height: 47vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
+header.sticky {
+  background: #fff;
+  padding: 20px 40px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
-.banner .content{
-    display: flex;
-    justify-items: center;
-    line-height: 120px;
-    width: 80%;
-    border-bottom: solid 15px #444;
+header.sticky .logo {
+  color: #000;
 }
-.banner .content h2{
-    font-family: 'Oswald', sans-serif;
-    font-size: 60px;
-    padding: 10px 0;
-    color: #fff;
+.workshop {
+  position: relative;
+  width: 100%;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 40px;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s;
+.workshop li {
+  list-style: none;
+  padding: 20px 40px;
+  float: left;
+  margin-left: 30px;
 }
-header .logo{
-    color: #fff;
-    font-weight: 700;
-    font-size: 30px;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    font-family: Oswald;
+.workshop a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #222;
+  text-transform: uppercase;
 }
-header.sticky{
-    background: #fff;
-    padding: 20px 40px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+.workshop a p {
+  padding: 10px 40px;
 }
-header.sticky .logo{
-    color: #000;
+.workshop a p:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
-.workshop{
-    position: relative;
-    width: 100%;
-    min-height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.workshop .keyword {
+  position: relative;
+  width: 76%;
+  display: table-cell;
+  border-bottom: solid 5px #666;
 }
-.workshop li{
-    list-style: none;
-    padding: 20px 40px;
-    float: left;
-    margin-left: 30px;
+.workshop .keyword ul {
+  float: left;
+  text-align: center;
 }
-.workshop a{
-    text-decoration: none;
-    font-size: 20px;
-    color: #222;
-    text-transform: uppercase;
+.workshop .keyword ul li {
+  margin: 20px;
+  width: 300px;
 }
-.workshop a p{
-    padding: 10px 40px;
+.article {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.workshop a p:hover{
-    background-color: rgba(0, 0, 0, 0.1);
+.article .text {
+  position: relative;
+  font-size: 1.3em;
+  width: 80%;
+  display: block;
+  margin-bottom: 80px;
 }
-.workshop .keyword{
-    position: relative;
-    width: 76%;
-    display: table-cell;
-    border-bottom: solid 5px #666;
+.article .text h2 {
+  margin-top: 50px;
 }
-.workshop .keyword ul { 
-    float: left;
-    text-align: center;
+.article .text p {
+  line-height: 1.4em;
+  color: #555;
+  margin-top: 40px;
 }
-.workshop .keyword ul li{ 
-    margin: 20px;
-    width: 300px;
+.article .text h3 {
+  margin-top: 40px;
 }
-.article{
-    min-height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.article .text ul {
+  padding-left: 40px;
 }
-.article .text{
-    position: relative;
-    font-size: 1.3em;
-    width: 80%;
-    display: block;
-    margin-bottom: 80px;
+.article .text ul li {
+  margin-top: 15px;
 }
-.article .text h2{
-    margin-top: 50px;
+.article .text .pr {
+  list-style: none;
 }
-.article .text p{
-    line-height: 1.4em;
-    color: #555;
-    margin-top: 40px;
-
+.pic {
+  float: right;
 }
-.article .text h3{
-    margin-top: 40px;
+.text div[title] {
+  width: 50%;
+  float: left;
 }
-.article .text ul{
-    padding-left: 40px;
+div.key1 {
+  width: 35%;
+  float: left;
 }
-.article .text ul li{
-    margin-top: 15px;
-}
-.article .text .pr{
-    list-style: none;
-}
-.pic{ 
-        float: right;
-
-}
-.text div[title]{ 
-    width:50%;
-    float: left;
-}
-div.key1{ 
-    width: 35%;
-    float: left;
-}
-div.key2{ 
-    float: left;
-    width: 30%;
+div.key2 {
+  float: left;
+  width: 30%;
 }
